@@ -1,6 +1,6 @@
 # Gorgon's Eye - File Encryptor/Decryptor
 
-![Gorgon's Eye Logo](logo.png)
+![Gorgon's Eye Logo](logo.PNG)
 
 Gorgon's Eye is a symmetric key encryptor and decryptor implemented in C++ without third-party libraries. It offers a simple yet effective way to secure your files using encryption.
 
