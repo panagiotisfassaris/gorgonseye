@@ -33,13 +33,13 @@ To install and use Gorgon's Eye, follow these steps:
 
 2. **Extract & run the executables:**
 
-## Encryptor (encrypt.exe): For encrypting files.
+## Encryptor
 
 ./encrypt --help | Provides help on how to use the encryptor.
 ./encrypt -f <input file> | Encrypts a single file.
 ./encrypt -r | Recursively encrypts all files in the current directory.
 
-## Decryptor (decrypt.exe): For decrypting files.
+## Decryptor
 
 ./decrypt --help | Provides help on how to use the decryptor.
 ./decrypt -f <input file> <path/to/key.bin> | Decrypts a single file.
