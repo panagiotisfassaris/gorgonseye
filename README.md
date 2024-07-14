@@ -26,7 +26,7 @@ To install and use Gorgon's Eye, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/gorgonseye.git
+   git clone https://github.com/panagiotisfassaris/gorgonseye.git
    cd gorgonseye
    ```
    
