@@ -1,0 +1,25 @@
+Gorgon's Eye is a symmetric key encryptor and decryptor project by Panagiotis Fassaris, implemented in C++ without the use of any third-party libraries.
+
+---------------
+Usage:
+---------------
+
+encrypt.cpp:
+
+./encrypt --help -> Provides help on how to use the encrypt.cpp.
+./encrypt -f <input file> -> Encrypts a single .txt file.
+After running encrypt.cpp, a key.bin file will be generated. Be careful not to lose this key; otherwise, you won't be able to decrypt your files.
+
+decrypt.cpp:
+
+./decrypt --help -> Provides help on how to use the decrypt.cpp.
+./decrypt -f <input file> <path/to/key.bin> -> Decrypts a single .txt file.
+
+---------------
+Future Updates:
+---------------
+
+Support for more file types for encryption/decryption.
+Recursive encryption/decryption.
+Availability as a Python (.py) script.
+Asymmetric encryption option (AES-256).
