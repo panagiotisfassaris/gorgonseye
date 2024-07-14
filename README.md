@@ -30,8 +30,9 @@ To install and use Gorgon's Eye, follow these steps:
    ```bash
    git clone https://github.com/yourusername/gorgonseye.git
    cd gorgonseye
-
-2. **Extract & run the executables:**
+   ```
+   
+2. **Extract & run the executables in a target directory.**
 
 ## Encryptor
 
