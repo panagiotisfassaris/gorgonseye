@@ -9,7 +9,7 @@ Gorgon's Eye is a symmetric key encryptor and decryptor implemented in C++ witho
 - [About](#about)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Encryptor (`encrypt.exe`)](#encryptor)
+  - [Encryptor (`encrypt.exe`)](#Encryptor (encrypt.exe): For encrypting files)
   - [Decryptor (`decrypt.exe`)](#decryptor)
 - [Notes](#notes)
 - [Features](#features)
