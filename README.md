@@ -6,13 +6,11 @@ Gorgon's Eye is a symmetric key encryptor and decryptor implemented in C++ witho
 
 ## Table of Contents
 
-- [About](#about2)
+- [About](#about)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Encryptor (`encrypt.exe`)](#encryptor-encryptexe)
-    - [Command-Line Usage](#command-line-usage)
-  - [Decryptor (`decrypt.exe`)](#decryptor-decryptexe)
-    - [Command-Line Usage](#command-line-usage-1)
+  - [Encryptor (`encrypt.exe`)](#encryptor)
+  - [Decryptor (`decrypt.exe`)](#decryptor)
 - [Notes](#notes)
 - [Features](#features)
 - [Future Updates](#future-updates)
@@ -35,13 +33,13 @@ To install and use Gorgon's Eye, follow these steps:
 
 2. **Extract & run the executables:**
 
-Encryptor (encrypt.exe): For encrypting files.
+## Encryptor (encrypt.exe): For encrypting files.
 
 ./encrypt --help | Provides help on how to use the encryptor.
 ./encrypt -f <input file> | Encrypts a single file.
 ./encrypt -r | Recursively encrypts all files in the current directory.
 
-Decryptor (decrypt.exe): For decrypting files.
+## Decryptor (decrypt.exe): For decrypting files.
 
 ./decrypt --help | Provides help on how to use the decryptor.
 ./decrypt -f <input file> <path/to/key.bin> | Decrypts a single file.
