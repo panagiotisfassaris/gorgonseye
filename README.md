@@ -58,7 +58,7 @@ After running `encrypt.exe`, a `key.bin` file will be generated. Do not lose thi
 - **Recursive Operations**: Supports recursive encryption and decryption of files within directories.
 - **Random Key Generation**: Generates a random symmetric key for enhanced security (Mersenne Twister).
 
-## Change Log
+## Changelog
 
 - **9/8/2024: Added Python Script Availability** (An alternative implementation in Python for broader compatibility).
 
