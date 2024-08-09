@@ -60,7 +60,7 @@ After running `encrypt.exe`, a `key.bin` file will be generated. Do not lose thi
 
 ## Change Log
 
-- **9/8/2024: Added Python Script Availability (An alternative implementation in Python for broader compatibility).
+- **9/8/2024: Added Python Script Availability** (An alternative implementation in Python for broader compatibility).
 
 ## Future Updates
 
