@@ -64,4 +64,4 @@ After running `encrypt.exe`, a `key.bin` file will be generated. Do not lose thi
 
 ## Future Updates
 
-- **Asymmetric Encryption Option**: Implement AES-256 asymmetric encryption for stronger security.
+- **Asymmetric Encryption Option**: Implement encryption methods (such as AES-256 asymmetric encryption), for stronger security.
