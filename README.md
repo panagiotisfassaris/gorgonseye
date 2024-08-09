@@ -56,7 +56,7 @@ After running `encrypt.exe`, a `key.bin` file will be generated. Do not lose thi
 
 - **Symmetric Key Encryption**: Uses a symmetric key to encrypt and decrypt files.
 - **Recursive Operations**: Supports recursive encryption and decryption of files within directories.
-- **Random Key Generation**: Generates a random symmetric key for enhanced security.
+- **Random Key Generation**: Generates a random symmetric key for enhanced security (Mersenne Twister).
 
 ## Future Updates
 
