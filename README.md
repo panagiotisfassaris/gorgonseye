@@ -2,7 +2,7 @@
 
 ![Gorgon's Eye Logo](logo.PNG)
 
-Gorgon's Eye is a symmetric key encryptor and decryptor implemented in C++ without third-party libraries. It offers a simple yet effective way to secure your files using encryption.
+Gorgon's Eye is a symmetric key encryptor and decryptor implemented in C++ & Python without third-party libraries. It offers a simple yet effective way to secure your files using encryption.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Gorgon's Eye is a symmetric key encryptor and decryptor implemented in C++ witho
 
 ## About
 
-Gorgon's Eye provides a command-line interface to encrypt and decrypt files using a symmetric key. It's designed to be lightweight and efficient (Currently supporting Windows environments only).
+Gorgon's Eye provides a command-line interface to encrypt and decrypt files using a symmetric key.
 
 ## Installation
 
