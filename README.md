@@ -2,7 +2,7 @@
 
 ![Gorgon's Eye Logo](logo.PNG)
 
-Gorgon's Eye is a symmetric key encryptor and decryptor created by Panagiotis Fassaris, and implemented in pure C++ & Python (without third-party libraries). It offers a simple yet effective way to secure your files using encryption.
+Gorgon's Eye is a symmetric key encryptor and decryptor created by Panagiotis Fassaris, and implemented in pure C++ & Python (without the use of third-party libraries). It offers a simple yet effective way to secure your files using encryption.
 
 ## Table of Contents
 
