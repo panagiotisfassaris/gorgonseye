@@ -2,22 +2,22 @@
 
 ![Gorgon's Eye Logo](logo.PNG)
 
-Gorgon's Eye is a symmetric key encryptor and decryptor created by Panagiotis Fassaris, and implemented in pure C++ & Python (without the use of third-party libraries). It offers a simple yet effective way to secure your files using encryption.
+Gorgon's Eye is a hybrid file encryptor and decryptor, now fully implemented in Python. It offers a robust solution for securing your files using a combination of symmetric (AES) and asymmetric (RSA) encryption. The tool provides both file and directory encryption capabilities, with options for recursive operations.
 
 ## Table of Contents
 
 - [About](#about)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Encryptor (`encrypt.exe`)](#Encryptor)
-  - [Decryptor (`decrypt.exe`)](#Decryptor)
+  - [Encryptor (`encrypt.py`)](#Encryptor)
+  - [Decryptor (`decrypt.py`)](#Decryptor)
 - [Notes](#notes)
 - [Features](#features)
 - [Future Updates](#future-updates)
 
 ## About
 
-Gorgon's Eye provides a command-line interface to encrypt and decrypt files using a symmetric key.
+Gorgon's Eye provides a command-line interface to encrypt and decrypt files using hybrid encryption methods. It uses RSA to encrypt AES keys, ensuring that even if the symmetric key is exposed, it is protected by the RSA encryption.
 
 ## Installation
 
@@ -30,38 +30,45 @@ To install and use Gorgon's Eye, follow these steps:
    cd gorgonseye
    ```
    
-2. **Extract & run the executables in a target directory.**
+2. **Install the required dependencies**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Encryptor
 
-(`encrypt.exe`)
+(`encrypt.py`)
 - `./encrypt --help`: Provides help on how to use the encryptor.
-- `./encrypt -f <input file>`: Encrypts a single file.
-- `./encrypt -r <dir> `: Recursively encrypts all files in the current directory. If no directory is specified with -r, the current directory will be used.
+- `./encrypt -h <input file> [public_key.pem]`: Encrypts a single file using hybrid encryption. You can provide a public key or generate a new key pair.
+- `./encrypt.py -r <dir> [public_key.pem]`: Recursively encrypts all files in the specified directory using hybrid encryption. If no directory is specified with -r, the current directory will be used.
 
 ## Decryptor
 
-(`decrypt.exe`)
+(`decrypt.py`)
 - `./decrypt --help`: Provides help on how to use the decryptor.
-- `./decrypt -f <input file> <path/to/key.bin>`: Decrypts a single file.
-- `./decrypt -r <path/to/key.bin> <dir>`: Recursively decrypts all files in the current directory. If no directory is specified with -r, the current directory will be used.
+- `./decrypt.py -h <input file> <private_key.pem>`: Decrypts a single encrypted file using the provided RSA private key.
+- `./decrypt.py -r <dir> <private_key.pem>`: Recursively decrypts all files in the specified directory using the RSA private key.
 
-Ensure you have the correct `key.bin` file for decryption. It should match the key used during encryption.
+Make sure you have the corresponding private_key.pem for the decryption process, as it is required to decrypt the AES key used during encryption.
 
 ## Notes
 
-After running `encrypt.exe`, a `key.bin` file will be generated. Do not lose this key, as it's required for decryption.
+After running encrypt.py, RSA public/private key pairs (public_key.pem and private_key.pem) will be generated if not provided. Do not lose the private key, as it is required for decryption. Additionally, an encrypted AES key (encrypted_aes_key.bin) will be stored in the directory alongside the encrypted files.
 
 ## Features
 
-- **Symmetric Key Encryption**: Uses a symmetric key to encrypt and decrypt files.
+- **Hybrid Encryption**: Combines AES (symmetric) for fast encryption with RSA (asymmetric) to securely encrypt the AES key.
 - **Recursive Operations**: Supports recursive encryption and decryption of files within directories.
-- **Random Key Generation**: Generates a random symmetric key for enhanced security (Mersenne Twister).
+- **Random AES Key Generation**: Securely generates a random AES key for each encryption session.
 
 ## Changelog
 
+- **10/10/2024: Program converted to Hybrid Encryptor/Decryptor in Python** (Fully transitioned from C++ to Python, now using hybrid encryption with AES and RSA).
 - **9/8/2024: Added Python Script Availability** (An alternative implementation in Python for broader compatibility).
 
 ## Future Updates
 
-- **Asymmetric Encryption Option**: Implement encryption methods (such as AES-256 asymmetric encryption), for stronger security.
+- **Key Management**: Provide better key management options, including secure storage and retrieval.
+- **GUI (Graphical User Interface)**: Potential future development of a GUI for easier use.
+- **Stronger Asymmetric Encryption**: Explore support for stronger encryption algorithms and key sizes for RSA or alternative asymmetric encryption methods.
