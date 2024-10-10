@@ -40,7 +40,7 @@ To install and use Gorgon's Eye, follow these steps:
 
 (`encrypt.py`)
 - `./encrypt --help`: Provides help on how to use the encryptor.
-- `./encrypt -h <input file> [public_key.pem]`: Encrypts a single file using hybrid encryption. You can provide a public key or generate a new key pair.
+- `./encrypt -h <input file> [public_key.pem]`: Encrypts a single file using hybrid encryption. You can provide a pre-existing public key or generate a new key pair.
 - `./encrypt.py -r <dir> [public_key.pem]`: Recursively encrypts all files in the specified directory using hybrid encryption. If no directory is specified with -r, the current directory will be used.
 
 ## Decryptor
