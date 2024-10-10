@@ -35,6 +35,7 @@ To install and use Gorgon's Eye, follow these steps:
    ```bash
    pip install -r requirements.txt
    ```
+You can find the executable formats (.exe) in the Executables folder within the repository. These executables provide an easy way to use the encryptor and decryptor without needing to run the Python scripts directly.
 
 ## Encryptor
 
