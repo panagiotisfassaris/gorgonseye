@@ -2,7 +2,7 @@
 
 ![Gorgon's Eye Logo](logo.PNG)
 
-Gorgon's Eye is a hybrid file encryptor and decryptor, now fully implemented in Python. It offers a robust solution for securing your files using a combination of symmetric (AES) and asymmetric (RSA) encryption. The tool provides both file and directory encryption capabilities, with options for recursive operations.
+Gorgon's Eye is a hybrid file encryptor and decryptor programmed by Panagiotis Fassaris, now fully implemented in Python. It offers a robust solution for securing your files using a combination of symmetric (AES) and asymmetric (RSA) encryption. The tool provides both file and directory encryption capabilities, with options for recursive operations.
 
 ## Table of Contents
 
