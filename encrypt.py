@@ -1,6 +1,17 @@
 import sys, os
-from enc_header import encrypt_help, generate_aes_key, load_public_key, generate_asymmetric_keys, check_flags_enc, save_key_to_file, encrypt_directory, encrypt_file, encrypt_aes_key
+from enc_header import (
+    encrypt_help,
+    generate_aes_key,
+    load_public_key,
+    generate_asymmetric_keys,
+    check_flags_enc,
+    save_key_to_file,
+    encrypt_directory,
+    encrypt_file,
+    encrypt_aes_key,
+)
 from cryptography.hazmat.primitives import serialization
+
 
 def main():
     argc = len(sys.argv)
@@ -16,7 +27,7 @@ def main():
 
     enc_type, inputFile, cwd, spec_dir, pub_key = check_flags_enc(argv, argc)
 
-    if enc_type == 'h':
+    if enc_type == "h":
         if pub_key:
             public_key = load_public_key(pub_key)
             if not public_key:
@@ -32,12 +43,14 @@ def main():
         elif inputFile and os.path.isfile(inputFile):
             aes_key = generate_aes_key(32)
             encrypt_file(inputFile, aes_key)
-            
+
             encrypted_aes_key = encrypt_aes_key(aes_key, public_key)
 
-            with open(inputFile + '.key.bin', 'wb') as f:
+            with open(inputFile + ".key.bin", "wb") as f:
                 f.write(encrypted_aes_key)
-            print(f"Encrypted '{inputFile}' and stored AES key in '{inputFile}.key.bin'.")
+            print(
+                f"Encrypted '{inputFile}' and stored AES key in '{inputFile}.key.bin'."
+            )
         else:
             print("Invalid input path.")
             return 1
@@ -47,6 +60,7 @@ def main():
 
     print("File(s) encrypted successfully.")
     return 0
+
 
 if __name__ == "__main__":
     main()
